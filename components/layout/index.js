@@ -8,7 +8,7 @@ import {Calculator} from '../icons'
 
 function Index () {
 
-    const [input, setInput] = useState({})
+    const [inputs, setInputs] = useState({})
     
     const [bmi, setBmi] = useState()
     
@@ -19,16 +19,17 @@ function Index () {
 
     useEffect(() => {
 
-        const boy = input.boy && input.boy 
-        const kilo = input.kilo && input.kilo 
+        const boy = inputs.boy && inputs.boy 
+        const kilo = inputs.kilo && inputs.kilo 
 
-        isNaN(kilo) || isNaN(boy)
-            ? setAlert(true) 
-            : setAlert(false)
+        if (isNaN(kilo) || isNaN(boy)){
+            setAlert(true) 
+        }else{
+            setAlert(false)
+            setBmi(kilo * boy)
+        }
 
-        input.kilo && input.boy && setBmi(kilo * boy)
-
-    }, [input])
+    }, [inputs])
 
     useEffect(() => {
         setAlert(false)
@@ -36,7 +37,7 @@ function Index () {
 
     const handle = () => {
         const value = {boy: parseInt(boyRef.current.value), kilo: parseInt(kiloRef.current.value)};
-        setInput(value)
+        setInputs(value)
     }
 
     const close = () => {
