@@ -1,0 +1,14 @@
+.nav{
+    position: fixed;
+    display: flex;
+    justify-content: center;
+    width: 100vw;
+}
+.nav ul{
+    display: inline-flex;
+    list-style: none;
+    padding: 0px;
+}
+.nav li{
+    padding: 0 30px;
+}

@@ -1,0 +1,12 @@
+.a{
+    text-decoration: none;
+    color: var(--c-text-color);
+}
+.a:hover{
+    color: var(--c-theme);
+}
+.active{
+    border: 0 solid var(--c-theme);
+    border-bottom-width: 1px;
+    color: var(--c-theme);
+}
