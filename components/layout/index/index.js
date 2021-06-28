@@ -3,8 +3,8 @@ import cn from 'classnames'
 
 import Style from './index.module.css'
 
-import Button from '../button/button'
-import {Calculator} from '../icons'
+import Button from '../../button/button'
+import {Calculator} from '../../icons'
 
 function Index () {
 
@@ -26,7 +26,7 @@ function Index () {
             setAlert(true) 
         }else{
             setAlert(false)
-            setBmi(kilo * boy)
+            setBmi(Math.floor(kilo / (boy / 50)))
         }
 
     }, [inputs])
@@ -52,12 +52,12 @@ function Index () {
 
                 <div className={Style.inputBox}>
                     <label>Boy: </label>
-                    <input type="number" ref={boyRef}/>
+                    <input type="number" ref={boyRef} placeholder="cm cinsinden"/>
                 </div>
 
                 <div className={Style.inputBox}>
                     <label>Kilo: </label>
-                    <input type="number" ref={kiloRef}/>
+                    <input type="number" ref={kiloRef} placeholder="kg cinsinden"/>
                 </div>
                 
                 <Button
