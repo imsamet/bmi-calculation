@@ -4,8 +4,9 @@ import Form from '../../form/form'
 
 function MyValues () {
     return(
-        <Form>
-
+        <Form width={"50vw"} marginTop>
+            <div className={Style.head}></div>
+            <div></div>
         </Form>
     )
 }

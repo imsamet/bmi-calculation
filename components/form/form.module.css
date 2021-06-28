@@ -2,10 +2,13 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 100vh;
+    min-height: 100vh;
 }
 .content{
     width: 20vw;
     display: flex;
     flex-direction: column;
+}
+.marginTop{
+    margin-top: 200px;
 }
