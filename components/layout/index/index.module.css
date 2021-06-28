@@ -40,7 +40,7 @@
 }
 .result{
     color: var(--c-text-color);
-    background-color: var(--c-background-soft);
+    background-color: var(--c-soft-grey);
     border-radius: 5px;
     padding: 10px;
     margin-top: 15px;
@@ -48,4 +48,20 @@
 .green{
     color: var(--c-green);
     background-color: var(--c-green20);
+}
+.yellow{
+    color: var(--c-yellow);
+    background-color: var(--c-yellow20);
+}
+.halfOrange{
+    color: var(--c-halfOrange);
+    background-color: var(--c-halfOrange20);
+}
+.orange{
+    color: var(--c-orange);
+    background-color: var(--c-orange20);
+}
+.red{
+    color: var(--c-red);
+    background-color: var(--c-red20);
 }

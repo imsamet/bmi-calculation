@@ -1,17 +1,22 @@
 :root {
     --c-theme: #FFBA00;
-    --c-red: #FF4936;
-    --c-red20: #ff493633;
+
     --c-green: #279a04;
     --c-green20: #3fe80c33;
-    --c-turquoise: #00D7FF;
-    --c-border: #A7A7A7;
-    --c-border-20: #a7a7a733;
-    --c-soft-grey: #DCDCDC;
-    --c-background-soft: #F5F5F5;
-    --c-background: #FFFFFF;
+
+    --c-yellow: #859000;
+    --c-yellow20: #eafc006b;
+
+    --c-halfOrange: #c38e00;
+    --c-halfOrange20: #ffba0073;
+
+    --c-orange: #da6000;
+    --c-orange20: #ff700075;
+
+    --c-red: #d50202;
+    --c-red20: #ff00005c;
+
+    --c-soft-grey: #eaeaea;
     
     --c-text-color: #5B5B5B;
-
-    --v-duration: 200ms
   }
