@@ -26,7 +26,6 @@
 }
 
 .alert{
-    width: max-content;
     color: var(--c-red);
     background-color: var(--c-red20);
     border-radius: 5px;
