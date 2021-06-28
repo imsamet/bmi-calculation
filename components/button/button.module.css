@@ -1,0 +1,38 @@
+.button{
+    display: inline-flex;
+    font-size: 36px;
+    background-color: transparent;
+    transition: var(--v-duration);
+    color: var(--c-text-color);
+    border: none;
+}
+.hover:hover{
+    background-color: var(--c-soft-grey);
+}
+.center{
+    align-items: center;
+    justify-content: center;
+}
+.centerArund{
+    align-items: center;
+    justify-content: space-around;
+}
+.centerBetween{
+    align-items: center;
+    justify-content: space-between;
+}
+.centerEvenly{
+    align-items: center;
+    justify-content: space-evenly;
+}
+.pointer{
+    cursor: pointer;
+}
+
+.animation{
+    transform: rotateZ(180deg);
+}
+
+.button svg{
+    pointer-events: none;
+}
