@@ -40,7 +40,7 @@ function MyValues () {
                         <Button 
                             pointer
                             borderRadius={5}
-                            backgroundColor={"var(--c-soft-grey"} 
+                            backgroundColor={"var(--c-halfOrange20)"} 
                             padding={"10px 20px"} 
                             fontSize={15}  
                         ><NavLink href="/">Hesaplamaya Git</NavLink></Button>
