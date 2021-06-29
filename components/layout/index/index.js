@@ -30,6 +30,20 @@ function Index () {
             setAlert(false)
             storeBmi.setBmi((kilo / (boy / 50)).toFixed(1))
 
+            let newLocalStoregeData = [{boy: boy}, {kilo: kilo}, {bmi: (kilo / (boy / 50)).toFixed(1)}]
+
+            let localStorageData = JSON.parse(localStorage.getItem('bmi-calcculation'));
+
+            if(localStorageData){
+
+                localStorageData.push(newLocalStoregeData)
+
+                localStorage.setItem('bmi-calcculation', JSON.stringify(localStorageData))
+            }else{
+                newLocalStoregeData = [newLocalStoregeData]
+                
+                localStorage.setItem('bmi-calcculation', JSON.stringify(newLocalStoregeData))
+            }
         }
 
     }, [inputs])

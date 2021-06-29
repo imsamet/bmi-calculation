@@ -1,0 +1,76 @@
+.head{
+    color: var(--c-text-color);
+    background-color: var(--c-soft-grey);
+    border-radius: 5px;
+    padding: 10px;
+    margin-top: 15px;
+    width: fit-content;
+}
+.head h1{
+    font-size: 15px;
+}
+
+.content{
+    margin-top: 50px;
+}
+.content span{
+    color: var(--c-text-color);
+    margin-bottom: 10px;
+}
+.table{
+    margin-top: 30px;
+    width: 100%;
+}
+.tableHead{
+    text-align: left;
+}
+.table tr{
+    position: relative;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+.table tr:hover{
+    background-color: var(--c-soft-grey20);
+}
+.table tr:nth-child(even)::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: block;
+    background-color: var(--c-white20);
+}
+.table tr:hover::before{
+    background-color: transparent;
+}
+.table th, .table td{
+    border: 0px solid var(--c-soft-grey);
+    border-left-width: 1px;
+    padding: 20px;
+}
+.table tr *{
+    z-index: 99;
+}
+
+.green{
+    color: var(--c-green);
+    background-color: var(--c-green20);
+}
+.yellow{
+    color: var(--c-yellow);
+    background-color: var(--c-yellow20);
+}
+.halfOrange{
+    color: var(--c-halfOrange);
+    background-color: var(--c-halfOrange20);
+}
+.orange{
+    color: var(--c-orange);
+    background-color: var(--c-orange20);
+}
+.red{
+    color: var(--c-red);
+    background-color: var(--c-red20);
+}
