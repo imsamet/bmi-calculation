@@ -61,7 +61,7 @@ function MyValues () {
                     </tr>
 
                     {
-                        localStorageData.map((value, index) => {
+                        localStorageData && localStorageData.map((value, index) => {
 
                             const boy = value[0].boy
                             const kilo = value[1].kilo
